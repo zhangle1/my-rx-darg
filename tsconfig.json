@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig.base.json",
+    "files": [],
+    "include": [],
+    "references": [
+      { "path": "./apps/my-rx-darg/" },
+      { "path": "./libs/orders/" },
+      { "path": "./libs/products/" },
+      { "path": "./libs/shared/" }
+    ]
+  }

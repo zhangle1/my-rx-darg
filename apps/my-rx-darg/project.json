@@ -1,0 +1,8 @@
+{
+  "name": "my-rx-darg",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/my-rx-darg/src",
+  "projectType": "application",
+  "targets": {},
+  "tags": []
+}
