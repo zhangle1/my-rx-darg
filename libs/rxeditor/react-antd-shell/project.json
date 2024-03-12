@@ -1,0 +1,8 @@
+{
+  "name": "react-antd-shell",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/rxeditor/react-antd-shell/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

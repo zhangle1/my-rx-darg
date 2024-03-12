@@ -1,0 +1,8 @@
+{
+  "name": "locales-react",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/locales/locales-react/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

@@ -15,8 +15,21 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@my-rx-darg/locales": ["libs/locales/locales/src/index.ts"],
+      "@my-rx-darg/locales-react": ["libs/locales/locales-react/src/index.ts"],
+      "@my-rx-darg/minions-schema": ["libs/minions/schema/src/index.ts"],
       "@my-rx-darg/orders": ["libs/orders/src/index.ts"],
       "@my-rx-darg/products": ["libs/products/src/index.ts"],
+      "@my-rx-darg/react-antd-shell": [
+        "libs/rxeditor/react-antd-shell/src/index.ts"
+      ],
+      "@my-rx-darg/react-core": ["libs/rxeditor/react-core/src/index.ts"],
+      "@my-rx-darg/react-menu-designer": [
+        "libs/react-menu-designer/src/index.ts"
+      ],
+      "@my-rx-darg/react-shell": ["libs/react-shell/src/index.ts"],
+      "@my-rx-darg/schema": ["libs/schema/src/index.ts"],
+      "@my-rx-darg/share": ["libs/share/src/index.ts"],
       "@my-rx-darg/shared-ui": ["libs/shared/ui/src/index.ts"]
     }
   },

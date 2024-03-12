@@ -1,0 +1,8 @@
+{
+  "name": "react-core",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/rxeditor/react-core/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

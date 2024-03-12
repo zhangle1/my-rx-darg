@@ -1,0 +1,8 @@
+{
+  "name": "minions-schema",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/minions/schema/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}
