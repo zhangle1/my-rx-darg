@@ -1,0 +1,8 @@
+{
+  "name": "react-share",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/react-share/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

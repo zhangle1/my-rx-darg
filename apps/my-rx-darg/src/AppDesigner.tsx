@@ -7,6 +7,7 @@ import { ConfigProvider, theme } from "antd";
 import { LocalesContext } from "@my-rx-darg/locales-react";
 import { ThemeRoot } from "./ThemeRoot";
 import { Outlet } from "react-router-dom";
+import { Toolbar } from "./Toolbar";
 
 
 

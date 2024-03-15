@@ -1,0 +1,8 @@
+{
+  "name": "minions-logicflow-editor",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/minions/editor/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

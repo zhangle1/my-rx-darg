@@ -1,13 +1,15 @@
 import { SvgIcon, floatShadow } from '@my-rx-darg/react-antd-shell';
-import { Menu, MenuProps } from 'antd';
+import { Button, Menu, MenuProps, Space } from 'antd';
 import { memo, useCallback, useMemo, useState } from 'react';
 import styled from 'styled-components';
 import { DeviceType, ThemeMode } from '../interfaces';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useApp } from '../hooks/useApp';
 import { useAppTranslate } from '../hooks/useAppTranslate';
-import { ApiOutlined, AppstoreOutlined, DesktopOutlined, NodeIndexOutlined, SettingOutlined } from '@ant-design/icons';
+import { ApiOutlined, AppstoreOutlined, DesktopOutlined, GithubFilled, NodeIndexOutlined, SettingOutlined } from '@ant-design/icons';
 import { extendsIcon, h5Icon, largeScreenIcon, modelIcon, pluginIcon, websiteIcon } from '@my-rx-darg/react-shell';
+import { Logo, MenuButton } from '../common';
+import { ThemeButton } from '../components/ThemeButton';
 
 const ToolbarShell = styled.div`
   width: 100%;
@@ -145,6 +147,32 @@ export const Toolbar = memo(
       ], [handleDeviceChange, navigate, t]);
 
 
-      
+      return (
+        <ToolbarShell className="zoomable-toobar">
+          <Space>
+            <Logo mini />
+            <TopMenu
+              onClick={onClick}
+              selectedKeys={[device || current || params?.["*"] || ""]}
+              mode="horizontal"
+              items={items}
+            />
+            <ProjectTitle>{app?.title}</ProjectTitle>
+          </Space>
+          <Space>
+            <ThemeButton flat themeMode={themeMode} onThemeModeChange={onThemeModeChange} />
+            <Button
+              type="text"
+              href="https://github.com/rxdrag/rxeditor"
+              target="_blank"
+              icon={<GithubFilled />}
+            />
+            {/* <Button type="primary">保存</Button> */}
+            <Button>预览</Button>
+            <Button >发布</Button>
+            <MenuButton />
+          </Space>
+        </ToolbarShell>
+      )
   }
 );

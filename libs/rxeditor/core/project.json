@@ -1,0 +1,8 @@
+{
+  "name": "core",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/rxeditor/core/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

@@ -1,0 +1,8 @@
+{
+  "name": "minions-react-materials",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/minions-react-materials/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

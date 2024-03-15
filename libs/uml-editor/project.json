@@ -1,0 +1,8 @@
+{
+  "name": "uml-editor",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/uml-editor/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}
