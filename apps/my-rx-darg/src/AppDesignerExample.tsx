@@ -8,6 +8,7 @@ import { AppContext } from './contexts';
 import { FrontendRoot } from './FrontendRoot';
 import { AppDesigner } from './AppDesigner';
 import { TopNavType } from './Toolbar';
+import { ServiceExtension } from './ServiceExtension';
 
 export const AppDesignerExample = memo(() => {
   const { app } = useQueryApp('app1');
@@ -18,7 +19,7 @@ export const AppDesignerExample = memo(() => {
         <Routes>
           <Route path="" element={<FrontendRoot />}>
             <Route path={''} element={<AppDesigner />}>
-              {/* <Route path={`/${TopNavType.extends}/`} element={<ServiceExtension />}></Route> */}
+              <Route path={`/${TopNavType.extends}/`} element={<ServiceExtension />}></Route>
 
 
             </Route>

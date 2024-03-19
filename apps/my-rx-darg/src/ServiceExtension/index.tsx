@@ -14,6 +14,10 @@ import { backendActivityMaterialCategories } from "./LogicEditor/minion-material
 import _ from "lodash"
 import { appDesignerLocales } from "../locales";
 import { backendActivityMaterialLocales } from "./LogicEditor/minion-materials/locales";
+import { Fieldy } from "@my-rx-darg/fieldy-react";
+import { LogicFlowEditorAntd5Scope } from "@my-rx-darg/logicflow-editor-antd5";
+import { MetaContext } from "./contexts";
+import { LogicTree } from "./LogicTree";
 
 
 
@@ -66,5 +70,31 @@ export const ServiceExtension = memo(() => {
     }, [])
 
     
+
+    return (
+      <Fieldy>
+        <LogicFlowEditorAntd5Scope
+                themMode={themMode}
+                token={token}
+                materials={materials}
+                locales={locales}
+                logicFlowContext={logicFlowContextParam}
+        >
+          <MetaContext.Provider value={meta?.publishedContent}>
+            <Container>
+            <LeftColumn minWidth={50} maxWidth={500} width={260}>
+              <div className="model-tree-shell">
+                <LogicTree>
+                  
+                </LogicTree>
+
+              </div>
+            </LeftColumn>
+            </Container>
+          </MetaContext.Provider>
+        </LogicFlowEditorAntd5Scope>
+
+      </Fieldy>
+      )
 
 })
