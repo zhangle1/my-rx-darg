@@ -84,7 +84,14 @@ export const ServiceExtension = memo(() => {
             <Container>
             <LeftColumn minWidth={50} maxWidth={500} width={260}>
               <div className="model-tree-shell">
-                <LogicTree>
+                <LogicTree
+                
+                flows={flows}
+                selectedScript={selectedScript}
+                selectedLogicFlow={selectedLogicFlow}
+                onSelectLogicFlow={setSelectedLogicFlow}
+                onSelectScript={setSelectedScript}
+                >
                   
                 </LogicTree>
 

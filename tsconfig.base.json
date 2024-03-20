@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      // "@my-rx-darg/app-designer-example": ["apps/my-rx-darg/src/index.ts"],
+      "@my-rx-darg/app-designer-example": ["apps/my-rx-darg/src/index.ts"],
       "@my-rx-darg/core": ["libs/rxeditor/core/src/index.ts"],
       "@my-rx-darg/fieldy": ["libs/fieldy/fieldy/src/index.ts"],
       "@my-rx-darg/fieldy-react": ["libs/fieldy/fieldy-react/src/index.ts"],
