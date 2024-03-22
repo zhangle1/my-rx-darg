@@ -1,4 +1,6 @@
 import {
+  FlowToolbar,
+  FlowToolbox,
   ILogicMetas,
   ResizableColumn,
 } from '@my-rx-darg/minions-logicflow-editor';
@@ -60,5 +62,25 @@ export const LogicFlowEditorInner = memo((props: LogicFlowEditorInnerProps) => {
     setCollpased((collapsed) => !collapsed);
   }, []);
 
-  return <EditorShell {...rest}></EditorShell>;
+  return (
+    <EditorShell {...rest}>
+      <CenterArea>
+        {' '}
+        {toolbar && <FlowToolbar>{toolbar}</FlowToolbar>}
+        <OperateArea>
+          {toolbox && (
+            <FlowToolbox minWidth={100} maxWidth={500}>
+              {toolbox}
+            </FlowToolbox>
+          )}
+         <FlowCanvas
+            value={value}
+            onChange={onChange}
+          >
+            {children}
+          </FlowCanvas>
+        </OperateArea>
+      </CenterArea>
+    </EditorShell>
+  );
 });

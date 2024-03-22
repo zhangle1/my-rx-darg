@@ -1,9 +1,10 @@
 import { memo, ReactNode, useMemo } from "react";
-import { LogicFlowEditorAntd5InnerProps } from "./LogicFlowEditorAntd5Inner";
+import { LogicFlowEditorAntd5InnerProps, LogicMetaEditorAntd5Inner } from "./LogicFlowEditorAntd5Inner";
 import { ILocales } from "@my-rx-darg/locales";
 import { IThemeToken } from "@my-rx-darg/minions-logicflow-editor";
 import { theme } from "antd";
 import { IActivityMaterial } from "@my-rx-darg/minions-schema";
+import { LogicFlowEditorAntd5Scope } from "./LogicFlowEditorAntd5Scope";
 
 
 export const LogicFlowEditorAntd5 = memo((

@@ -18,6 +18,7 @@ import { Fieldy } from "@my-rx-darg/fieldy-react";
 import { LogicFlowEditorAntd5Scope } from "@my-rx-darg/logicflow-editor-antd5";
 import { MetaContext } from "./contexts";
 import { LogicTree } from "./LogicTree";
+import { LogicEditor } from "./LogicEditor";
 
 
 
@@ -85,18 +86,19 @@ export const ServiceExtension = memo(() => {
             <LeftColumn minWidth={50} maxWidth={500} width={260}>
               <div className="model-tree-shell">
                 <LogicTree
-                
                 flows={flows}
                 selectedScript={selectedScript}
                 selectedLogicFlow={selectedLogicFlow}
                 onSelectLogicFlow={setSelectedLogicFlow}
                 onSelectScript={setSelectedScript}
                 >
-                  
                 </LogicTree>
-
               </div>
             </LeftColumn>
+
+
+            <LogicEditor id={selectedLogicFlow} />
+
             </Container>
           </MetaContext.Provider>
         </LogicFlowEditorAntd5Scope>

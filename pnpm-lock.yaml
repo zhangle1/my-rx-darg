@@ -9,8 +9,20 @@ dependencies:
     specifier: ^5.3.1
     version: 5.3.1(react-dom@18.2.0)(react@18.2.0)
   '@antv/x6':
-    specifier: ^2.18.1
+    specifier: ^2.10.1
     version: 2.18.1
+  '@antv/x6-plugin-dnd':
+    specifier: ^2.0.5
+    version: 2.0.5(@antv/x6@2.18.1)
+  '@antv/x6-plugin-minimap':
+    specifier: ^2.0.5
+    version: 2.0.5(@antv/x6@2.18.1)
+  '@antv/x6-plugin-selection':
+    specifier: ^2.1.7
+    version: 2.1.7(@antv/x6@2.18.1)
+  '@antv/x6-react-shape':
+    specifier: ^2.1.2
+    version: 2.1.2(@antv/x6@2.18.1)(react-dom@18.2.0)(react@18.2.0)
   '@reduxjs/toolkit':
     specifier: ^1.9.3
     version: 1.9.3(react@18.2.0)
@@ -23,6 +35,9 @@ dependencies:
   classnames:
     specifier: ^2.5.1
     version: 2.5.1
+  insert-css:
+    specifier: ^2.0.0
+    version: 2.0.0
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
@@ -100,6 +115,9 @@ devDependencies:
   '@testing-library/react':
     specifier: 14.0.0
     version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
+  '@types/insert-css':
+    specifier: ^2.0.1
+    version: 2.0.1
   '@types/node':
     specifier: 18.16.9
     version: 18.16.9
@@ -250,6 +268,42 @@ packages:
 
   /@antv/x6-geometry@2.0.5:
     resolution: {integrity: sha512-MId6riEQkxphBpVeTcL4ZNXL4lScyvDEPLyIafvWMcWNTGK0jgkK7N20XSzqt8ltJb0mGUso5s56mrk8ysHu2A==}
+    dev: false
+
+  /@antv/x6-plugin-dnd@2.0.5(@antv/x6@2.18.1):
+    resolution: {integrity: sha512-g8GGJS2XmM8C59juOBiFqaR/f8i8y8tqw9sJNwta7s1Phh3hwDd7o4kk36Kk5eTKkfZfnjEyWHMOqp/h+EDibQ==}
+    peerDependencies:
+      '@antv/x6': ^2.x
+    dependencies:
+      '@antv/x6': 2.18.1
+    dev: false
+
+  /@antv/x6-plugin-minimap@2.0.5(@antv/x6@2.18.1):
+    resolution: {integrity: sha512-6L+W80AvoEZG4cwRxgPxvYLeKhqkBJEt4hTnZ2NWWcvBx02F9RJKRZVEEUemqE12mKUv4HT6WtbQV0QIfkTEMw==}
+    peerDependencies:
+      '@antv/x6': ^2.x
+    dependencies:
+      '@antv/x6': 2.18.1
+    dev: false
+
+  /@antv/x6-plugin-selection@2.1.7(@antv/x6@2.18.1):
+    resolution: {integrity: sha512-ODfYLNwKSaLgIYMYfMW4dYQ9KKFOVBEdH0BzvyG8mfRol+JtZuyrm4BRbAvMryQKHrSxs4JCYXTFd2F7ZTuxLQ==}
+    peerDependencies:
+      '@antv/x6': ^2.x
+    dependencies:
+      '@antv/x6': 2.18.1
+    dev: false
+
+  /@antv/x6-react-shape@2.1.2(@antv/x6@2.18.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-kNflTM88oyQwfx9H1FQNAK1YdzEnB5vUtlcyU/5WZikbXGuaRmcJUBpSDMJt+AQ8ng3c2joKYQwWHQWeV6RgNw==}
+    peerDependencies:
+      '@antv/x6': ^2.x
+      react: '>=18.0.0'
+      react-dom: '>= 18.0.0'
+    dependencies:
+      '@antv/x6': 2.18.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@antv/x6@2.18.1:
@@ -3235,6 +3289,10 @@ packages:
     resolution: {integrity: sha512-1m0bIFVc7eJWyve9S0RnuRgcQqF/Xd5QsUZAZeQFr1Q3/p9JWoQQEqmVy+DPTNpGXwhgIetAoYF8JSc33q29QA==}
     dev: true
 
+  /@types/insert-css@2.0.1:
+    resolution: {integrity: sha512-slUriXg8Y0JvpQoZlQ96bzzi86AU0DvtstKmGtBWpzJilFnpMUDbREi28Gpa+ZaIrTTCQUfvpDS7z7F1uwlYjQ==}
+    dev: true
+
   /@types/istanbul-lib-coverage@2.0.6:
     resolution: {integrity: sha512-2QF/t/auWm0lsy8XtKVPG19v3sSOQlJe/YHZgfjb/KBBHOGSV+J2q/S671rcq9uTBrLAXmZpqJiaQbMT+zNU1w==}
     dev: true
@@ -6026,6 +6084,10 @@ packages:
     resolution: {integrity: sha512-7PnF4oN3CvZF23ADhA5wRaYEQpJ8qygSkbtTXWBeXWXmEVRXK+1ITciHWwHhsjv1TmW0MgacIv6hEi5pX5NQdA==}
     engines: {node: '>=10'}
     dev: true
+
+  /insert-css@2.0.0:
+    resolution: {integrity: sha512-xGq5ISgcUP5cvGkS2MMFLtPDBtrtQPSFfC6gA6U8wHKqfjTIMZLZNxOItQnoSjdOzlXOLU/yD32RKC4SvjNbtA==}
+    dev: false
 
   /internal-slot@1.0.7:
     resolution: {integrity: sha512-NGnrKwXzSms2qUUih/ILZ5JBqNTSa1+ZmP6flaIp6KmSElgE9qdndzS3cqjrDovwFdmwsGsLdeFgB6suw+1e9g==}

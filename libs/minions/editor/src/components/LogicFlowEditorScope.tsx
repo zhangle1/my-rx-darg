@@ -29,6 +29,7 @@ export const LogicFlowEditorScope = memo((props: LogicFlowEditorScopeProps) => {
   }, [themMode, token]);
 
   const t = useTranslate();
+  console.log("graphState: 生成"+JSON.stringify(graphState))
 
   const store: EditorStore = useMemo(() => {
     return new EditorStore();

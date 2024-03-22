@@ -2,6 +2,8 @@ import { ILogicMetas } from "@my-rx-darg/minions-logicflow-editor";
 import { ActivityMaterialCategory, ILogicFlowDefine } from "@my-rx-darg/minions-schema";
 import { IReactComponents } from "@my-rx-darg/react-share";
 import { CSSProperties, memo, ReactNode } from "react";
+import { LogicFlowEditorInner } from "./components/LogicFlowEditorInner";
+import { FlowToolbar, Toolbox } from "./components";
 
 export type LogicFlowEditorAntd5InnerProps = {
     value: ILogicMetas,
@@ -22,10 +24,15 @@ export type LogicFlowEditorAntd5InnerProps = {
     ) =>{
         const { value, onChange, materialCategories, setters, toolbar, toolbox, ...rest } = props
         return (
-            <LogicFlowEditorInner>
+            <LogicFlowEditorInner
+            value={value}
+            onChange={onChange}
+            toolbar={toolbar === undefined ? <FlowToolbar /> : toolbar}
+            toolbox={toolbox !== false && (toolbox || <Toolbox materialCategories={materialCategories} />)}
 
-
-                
+            {...rest}
+            >
+                <div>测试一下</div>                
             </LogicFlowEditorInner>
             )
     })
