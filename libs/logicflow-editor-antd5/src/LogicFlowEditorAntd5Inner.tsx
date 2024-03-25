@@ -4,6 +4,8 @@ import { IReactComponents } from "@my-rx-darg/react-share";
 import { CSSProperties, memo, ReactNode } from "react";
 import { LogicFlowEditorInner } from "./components/LogicFlowEditorInner";
 import { FlowToolbar, Toolbox } from "./components";
+import { MiniToolbar } from "./components/MiniToolbar";
+import { PropertyBox } from "./components/PropertyBox";
 
 export type LogicFlowEditorAntd5InnerProps = {
     value: ILogicMetas,
@@ -29,10 +31,11 @@ export type LogicFlowEditorAntd5InnerProps = {
             onChange={onChange}
             toolbar={toolbar === undefined ? <FlowToolbar /> : toolbar}
             toolbox={toolbox !== false && (toolbox || <Toolbox materialCategories={materialCategories} />)}
+            propertyBox={<PropertyBox setters={setters} />}
 
             {...rest}
             >
-                <div>测试一下</div>                
+                          <MiniToolbar />
             </LogicFlowEditorInner>
             )
     })

@@ -1,0 +1,8 @@
+{
+  "name": "minions-runtime-core",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/minions/runtime-core/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

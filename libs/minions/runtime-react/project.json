@@ -1,0 +1,8 @@
+{
+  "name": "minions-runtime-react",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/minions/runtime-react/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

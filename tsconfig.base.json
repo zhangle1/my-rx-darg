@@ -33,9 +33,18 @@
       "@my-rx-darg/minions-react-materials": [
         "libs/minions-react-materials/src/index.ts"
       ],
+      "@my-rx-darg/minions-runtime-core": [
+        "libs/minions/runtime-core/src/index.ts"
+      ],
+      "@my-rx-darg/minions-runtime-react": [
+        "libs/minions/runtime-react/src/index.ts"
+      ],
       "@my-rx-darg/minions-schema": ["libs/minions/schema/src/index.ts"],
       "@my-rx-darg/orders": ["libs/orders/src/index.ts"],
       "@my-rx-darg/products": ["libs/products/src/index.ts"],
+      "@my-rx-darg/react-antd-components": [
+        "libs/react-antd-components/src/index.ts"
+      ],
       "@my-rx-darg/react-antd-shell": [
         "libs/rxeditor/react-antd-shell/src/index.ts"
       ],
@@ -43,6 +52,7 @@
       "@my-rx-darg/react-menu-designer": [
         "libs/react-menu-designer/src/index.ts"
       ],
+      "@my-rx-darg/react-runner": ["libs/react-runner/src/index.ts"],
       "@my-rx-darg/react-share": ["libs/react-share/src/index.ts"],
       "@my-rx-darg/react-shell": ["libs/react-shell/src/index.ts"],
       "@my-rx-darg/schema": ["libs/schema/src/index.ts"],

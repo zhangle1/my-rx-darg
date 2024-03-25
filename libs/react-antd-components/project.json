@@ -1,0 +1,8 @@
+{
+  "name": "react-antd-components",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/react-antd-components/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {}
+}

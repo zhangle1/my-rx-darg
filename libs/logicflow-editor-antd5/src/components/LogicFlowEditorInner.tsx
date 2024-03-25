@@ -1,4 +1,5 @@
 import {
+  FlowCanvas,
   FlowToolbar,
   FlowToolbox,
   ILogicMetas,
